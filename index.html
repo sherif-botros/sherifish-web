@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheriFish – Port Phillip Bay Fishing Companion</title>
+  <meta name="description" content="Real-time tides, solunar ratings, and fishing conditions for Port Phillip Bay.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a1628;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      font-size: 4rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #7eb8d4;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: center;
+      min-width: 140px;
+    }
+
+    .feature-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .feature-label { font-size: 0.85rem; color: #a0c4d8; }
+
+    .badge {
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .badge:hover { opacity: 0.85; }
+    .badge img { height: 68px; }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #4a6b80;
+    }
+    footer a { color: #4a6b80; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="logo">🎣</div>
+  <h1>SheriFish</h1>
+  <p class="tagline">Real-time tides, solunar ratings &amp; fishing conditions<br>for Port Phillip Bay</p>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🌊</div>
+      <div class="feature-label">Tide times</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌙</div>
+      <div class="feature-label">Solunar ratings</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌤️</div>
+      <div class="feature-label">Weather &amp; swell</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📍</div>
+      <div class="feature-label">Local spots</div>
+    </div>
+  </div>
+
+  <a class="badge" href="https://play.google.com/store/apps/details?id=au.sheri.fish">
+    <img alt="Get it on Google Play"
+         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+  </a>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
